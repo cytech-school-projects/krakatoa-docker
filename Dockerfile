@@ -6,4 +6,4 @@ RUN apt update && apt install -y why && why3 config
 
 WORKDIR /data
 COPY ./src/*.java .
-CMD ["krakatoa", "Min.java"]
+CMD krakatoa $(echo *.java)
